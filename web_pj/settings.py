@@ -127,10 +127,10 @@ STATIC_URL = '/static/'
 # STATICFILES_DIRS = (
 #   'web_app/static/',
 # )
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'web_app/static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 
 # if os.getcwd() == '/app':
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
