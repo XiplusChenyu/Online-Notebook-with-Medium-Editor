@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49371854-7cc9-4b31-a0eb-c210cb9e9cad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/static/web_app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/static/web_app/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/static/web_app/myplugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/static/web_app/myplugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_pj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_pj/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="49371854-7cc9-4b31-a0eb-c210cb9e9cad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,20 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/static/web_app/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="520">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1265">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="565">
+              <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
               <folding>
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
@@ -115,9 +109,9 @@
         <option value="$PROJECT_DIR$/web_pj/web_pj/static/hello.html" />
         <option value="$PROJECT_DIR$/web_app/templates/web_app/edit_entry.html" />
         <option value="$PROJECT_DIR$/web_app/templates/web_app/base.html" />
-        <option value="$PROJECT_DIR$/web_pj/settings.py" />
         <option value="$PROJECT_DIR$/web_app/static/web_app/myplugin.js" />
         <option value="$PROJECT_DIR$/web_app/static/web_app/main.js" />
+        <option value="$PROJECT_DIR$/web_pj/settings.py" />
       </list>
     </option>
   </component>
@@ -266,13 +260,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94040000" />
+    <option name="totallyTimeSpent" value="94290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="964" y="0" width="716" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.7403561" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.7403561" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -600,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1265">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#305#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/static/web_app/myplugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -630,8 +613,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/static/web_app/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="520">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
+          <folding>
+            <element signature="e#305#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
