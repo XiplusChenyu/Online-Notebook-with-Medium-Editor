@@ -12,6 +12,7 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery.fileupload" level="application" />
     <orderEntry type="library" name="medium-editor-insert-plugin" level="application" />
+    <orderEntry type="library" name="Accessible-full" level="application" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

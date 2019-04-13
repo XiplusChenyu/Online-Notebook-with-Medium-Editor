@@ -141,12 +141,45 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
         }
     );
 
+      let $math_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
+        "medium-editor-button-last medium-editor-button-active\"" +
+        " title=\"add_math\" " +
+        "aria-label=\"add_math\">" +
+        "<i class=\"fa fa-calculator\" style='color: black'></i></button></li>");
 
-    father_elements.addClass('Iamgoodnow');
+     $math_button.click(
+        function () {
+            let math_text = prompt("please type in a math in Letax",
+                "Here is math: \\(x+1\\) and a display $$x+1\\over x-1$$");
+
+            let holder = "<div id=\"mathdiv\"></div>";
+            let math_div = MathJax.HTML.Element(
+                      "div",
+                      {id: "math_div", style:{border:"1px solid", padding:"5px"}},
+                      [math_text]
+                    );
+            editor.pasteHTML(holder);
+            editor.removeElements("#mathdiv");
+            $("#mathdiv").append(math_div);
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+
+            editor.removeElements('.medium-insert-buttons');
+             $(".medium-insert-buttons-addons").attr('style', 'display: none');
+        }
+    );
+
+
+    father_elements.addClass('Iamgoodnow'); // prevent re-add
     father_elements.append($discussion_button);
     father_elements.append($table_button);
+    father_elements.append($math_button);
     father_elements.append($question_button);
     father_elements.append($music_button);
     father_elements.append($map_button);
+
     father_elements.append($up_button);
+});
+
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
