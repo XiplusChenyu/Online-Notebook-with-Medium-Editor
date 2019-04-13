@@ -1,0 +1,12 @@
+{% extends "web_app/base.html"%}
+{%block content%}
+<p><a href="{% url 'web_app:topic' topic.id %}">{{ topic }}</a></p>
+<h1>Add New Entry</h1>
+
+<form  id="entry_form"  action="{% url 'web_app:new_entry' topic.id %}" method=POST>
+    {% csrf_token %}
+    <textarea type="text" name="text" class="editable"></textarea>
+    <button class="entry_submit" type="button" name="btnSubmit">add Entry</button>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+{%block content%}
+
+<h1>{{todo_title.text}}</h1>
+<h2>Entries</h2>
+<ul>
+    {% for entry in entries %}
+    <li>{{ entry.date_added|date:'M d Y H:i' }}</li>
+    <li>{{ entry.text|linebreaks}}</li>
+
+    {% empty %}
+    <li>No Todo Yet</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

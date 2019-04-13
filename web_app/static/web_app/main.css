@@ -1,0 +1,93 @@
+h1
+{
+    font: 42px lato bold;
+}
+
+h2 {
+    font: 16px lato;
+    color: gray;
+}
+
+h3 {
+    font: 22px Roboto;
+    opacity: 66%;
+}
+
+blockquote{
+    box-sizing: content-box;
+    border-left: 5px solid #2c82ff;
+    padding-left: 10px;
+    font-style: italic;
+    margin-left: 0;
+}
+
+
+.medium-editor-toolbar-actions > li{
+    margin: 5px;
+}
+.medium-editor-action{
+    padding:20px 60px;
+    width: 47px;
+    height: 47px;
+    border-radius:23.5px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    box-shadow: 0 3px 6px black;
+    margin: 5px;
+    opacity: 0.9;
+}
+.medium-editor-action:hover{
+    background-color: #447e9b;
+}
+
+.medium-editor-insert-plugin .medium-insert-buttons {
+    position: absolute;
+    top: 100px;
+}
+
+.medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show{
+    position: relative;
+    left: 10px;
+    width: 47px;
+    height: 47px;
+    border-radius:23.5px;
+    background-color: #734B9d;
+    box-shadow: 0 3px 6px black;
+    opacity: 0.66;
+}
+.medium-insert-buttons-addons ul{
+    margin-left: 20px;
+}
+.medium-editor-insert-plugin .medium-insert-buttons li > button{
+    box-sizing: content-box;
+    margin: -19px 0 0 5px;
+    width: 47px;
+    height: 47px;
+    border-radius:23.5px;
+    background-color: white;
+    border: 1px black;
+    box-shadow: 0 3px 6px black;
+    opacity: 0.66;
+}
+
+.medium-editor-insert-plugin .medium-insert-buttons li > button:hover{
+    background-color: #447e9b;
+    border: 1px black;
+    box-shadow: 0 3px 6px black;
+    opacity: 0.66;
+
+}
+
+.medium-editor-insert-plugin .medium-insert-buttons li > button > span{
+    color: black; !important;
+}
+
+.medium-editor-insert-plugin .medium-insert-buttons li > button:hover > span{
+    color: white; !important;
+}
+
+#medium-editor-anchor-preview-1{
+    opacity: 0.9;
+    background-color: #5b80b2;
+}

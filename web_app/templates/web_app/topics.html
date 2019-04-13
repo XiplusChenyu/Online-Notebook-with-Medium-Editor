@@ -1,0 +1,18 @@
+{% extends "web_app/base.html"%}
+{%block content%}
+
+<h1>Topics</h1>
+ <a href="{% url 'web_app:new_topic' %}">Add Topic</a>
+<ul>
+    {% for item in topics %}
+    <li>
+        <a href="{% url 'web_app:topic' item.id %}">{{item}}</a>
+        <a href="{% url 'web_app:del_topic' item.id %}">del {{item}}</a>
+    </li>
+
+    {% empty %}
+    <li>No Titles Yet</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

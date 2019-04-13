@@ -1,0 +1,14 @@
+{% extends "web_app/base.html"%}
+{%block content%}
+
+<p><a href="{% url 'web_app:topic' topic.id %}">{{ topic }}</a></p>
+<h1>Edit Entry</h1>
+
+<form id="entry_form"  action="{% url 'web_app:edit_entry' entry.id %}" method=POST>
+    {% csrf_token %}
+    <textarea name="text" class="editable">{{ entry.text }}</textarea>
+    <button  class="entry_submit" type="button" name="btnSubmit">Save Changes</button>
+</form>
+
+
+{% endblock content %}
