@@ -1,18 +1,27 @@
 {% extends "web_app/base.html"%}
 {%block content%}
 
-<h1>Topics</h1>
- <a href="{% url 'web_app:new_topic' %}">Add Topic</a>
-<ul>
-    {% for item in topics %}
-    <li>
-        <a href="{% url 'web_app:topic' item.id %}">{{item}}</a>
-        <a href="{% url 'web_app:del_topic' item.id %}">del {{item}}</a>
+<div class="card" style="max-width: 30em">
+  <div class="card-body">
+    <h1 class="card-title">Topics</h1>
+    <p class="card-text">You can create topics here, entries are stored under different topics!</p>
+  </div>
+  <ul class="list-group list-group-flush">
+      {% for item in topics %}
+    <li class="list-group-item" style="position: relative">
+        <a href="{% url 'web_app:topic' item.id %}" class="btn btn-success" style="width: 10em" >{{item}}</a>
+        <a href="{% url 'web_app:del_topic' item.id %}" class="btn btn-danger" style="position: absolute; right: 10px">delete</a>
     </li>
+      {% empty %}
+    <li class="list-group-item">There is no topic! Try to add one</li>
+       {% endfor %}
+  </ul>
+  <div class="card-body">
+    <a href="{% url 'web_app:new_topic' %}" class="btn btn-primary">Add Topic</a>
+  </div>
+</div>
 
-    {% empty %}
-    <li>No Titles Yet</li>
-    {% endfor %}
-</ul>
+
+
 
 {% endblock content %}

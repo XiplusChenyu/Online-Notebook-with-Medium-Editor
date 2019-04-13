@@ -34,10 +34,12 @@
     <title>{{title}}</title>
 
 </head>
-<body>
-<a href="{% url 'web_app:topics' %}">Topics</a>
+<body class="page">
+<a href="{% url 'web_app:topics' %}" class="btn btn-primary">Topics</a>
+<div class="metanav">
 {% block content %}
 {% endblock content %}
+</div>
 
 </body>
 <script src="{% static 'web_app/main.js' %}"></script>

@@ -1,9 +1,17 @@
 {% extends "web_app/base.html"%}
 {%block content%}
 
-<h1>Add Topics</h1>
-<form action="{% url 'web_app:new_topic' %}" method=POST>
+<div class="card">
+  <div class="card-header">
+    you can add a new topic here
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">Add New Topic</h1>
+      <form action="{% url 'web_app:new_topic' %}" method=POST>
     {% csrf_token %} {{ form.as_p }}
-    <button name="submit">add topic</button>
-</form>
+        <button name="submit" class="btn btn-primary">add topic</button>
+    </form>
+  </div>
+</div>
+
 {% endblock content %}

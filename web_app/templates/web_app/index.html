@@ -2,8 +2,23 @@
 
 {% block content %}
 
-<p>Learning Log helps you keep track of your learning, for any topic you're
+<div class="card" style="max-width: 90em; with:80%">
+  <div class="card-body">
+    <h4 class="card-title">The Simple Online Pad</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Chenyu Xi</h6>
+    <div  class="card-text" style="font-size: 15px">
+       <p class="card-text">
+           This is a project based on HTML/CSS and django.<br>
+           I build a small online pad application for medium editor.
+           I'm not professional with front-end development, thus I cannot build an exactly same plugin/element bar as described in guideline, but I have tries my best. :)<br>
+           There might be unknown bugs as the web is not fully tested.
+       </p>
+      </div>
+      <br>
+      <a href="Mailto:xi.chenyu@columbia.edu" class="card-link btn btn-dark">Email</a>
+      <a href="{% url 'web_app:topics' %}" class="btn btn-primary" style="margin: auto">Hit me to start</a>
+  </div>
+</div>
 
-learning about.</p>
 
 {% endblock content %}
