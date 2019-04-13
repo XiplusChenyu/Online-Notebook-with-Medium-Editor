@@ -8,7 +8,7 @@ This is a project
 https://youtu.be/COoWM-TbruY
 
 # Explanations:
-- I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future.
+- I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future
 - I use a not smart way using jquery to create the plugin bar. 
 The extension already offers two great functions. I wrote the rest buttons, and I skip the upload file(it's a fake button since server cannot deal with large file) and use the easiest way to add music, 
 i.e. create href for music
