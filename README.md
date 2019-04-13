@@ -3,6 +3,10 @@ This is a project
 - Author: Chenyu Xi
 - Check <a href="https://dry-mountain-33107.herokuapp.com/">my heroku website</a>
 
+# Demo Video Here
+
+https://youtu.be/COoWM-TbruY
+
 # Explanations:
 - I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future.
 - I use a not smart way using jquery to create the plugin bar. 
