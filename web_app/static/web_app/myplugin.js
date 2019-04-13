@@ -100,28 +100,40 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
      $map_button.click(
         function () {
+            $('#mapdiv').remove();
             let holder = "<div id=\"mapdiv\"></div>";
-
-            let $el =$(" <div id=\"container\" style=\"width: 500px; height:300px\"></div>\n" +
+            let $el =$(" <div id=\"container\" style=\"width: 500px; contenteditable=false; height:300px\"></div>" +
+                "<br>" +
+                "" +
                 "  <script>\n" +
                 "    $(function(){\n" +
                 "      $('#container').vectorMap({\n" +
                 "        map: 'world_mill_en',\n" +
-                "        backgroundColor:'grey',\n" +
+                "        backgroundColor:'white',\n" +
                 "        regionStyle: {\n" +
                 "          initial: {\n" +
                 "            fill: 'blue'\n" +
                 "          }\n" +
                 "        },\n" +
-                "        zoomOnScroll: false,\n" +
+                "        zoomOnScroll: true,\n" +
                 "        zoomMax: 1,\n" +
                 "        zoomMin: 1\n" +
                 "      });\n" +
                 "    });\n" +
-                "  </script>");
+                "  </script>" +
+                "<p id='cursor_indicator'>world map</p>\n");
+            let $eod = $("<p class=\"medium-insert-active\"></p>");
 
             editor.pasteHTML(holder);
             $("#mapdiv").append($el);
+            $('#cursor_indicator').append($eod);
+
+            let press = jQuery.Event("keypress");
+            press.ctrlKey = false;
+            press.which = 40;
+            $("#cursor_indicator").trigger(press);
+
+
             editor.removeElements('.medium-insert-buttons');
              $(".medium-insert-buttons-addons").attr('style', 'display: none');
         }
