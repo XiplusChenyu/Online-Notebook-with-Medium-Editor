@@ -154,13 +154,14 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
             let holder = "<div id=\"mathdiv\"></div>";
             let math_div = MathJax.HTML.Element(
-                      "div",
-                      {id: "math_div", style:{border:"1px solid", padding:"5px"}},
+                      "div", {id: "math_div", style:{border:"1px solid", padding:"5px"}},
                       [math_text]
                     );
             editor.pasteHTML(holder);
-            editor.removeElements("#mathdiv");
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            editor.removeElements("#math_div");
             $("#mathdiv").append(math_div);
+            editor.pasteHTML('<br>');
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 
             editor.removeElements('.medium-insert-buttons');

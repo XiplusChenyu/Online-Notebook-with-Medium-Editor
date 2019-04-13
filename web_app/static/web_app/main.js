@@ -48,6 +48,7 @@ editor = new MediumEditor('.editable',{
 
 });
 
+
 $(function () {
     $('.editable').mediumInsert({
         editor: editor
@@ -57,9 +58,11 @@ $(function () {
 
 $('.entry_submit').click(function(event) {
   $('#entry_form .medium-insert-buttons').remove();
+  editor.addElements("#mathdiv");
   let form = document.getElementById('entry_form');
   console.log(form);
   form.submit();
+  editor.removeElements("#mathdiv");
 });
 
 
