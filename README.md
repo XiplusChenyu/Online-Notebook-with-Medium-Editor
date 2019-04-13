@@ -15,19 +15,8 @@ i.e. create href for music
 - Meanwhile, the MathJax sdk is not compatible well with the plugin, in some rare case the math equation will disappear
 - I implement add table button in two place, one use sdk, one is dummy version in plugin tool bar
 
-# Here are the sample pictures:
-### Sample Editor I
+
+### Sample Editor
 I implement the requirements here
 
 <img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/PadPage.png" height=300>
-
-### Sample Editor II
-<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/Plugbar.png" height=300>
-
-### Topics Page
-<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/TopicsPage.png" height=300>
-
-### Topic Display Page
-This pages lists all entries you added
-
-<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/math.png" weight=200>
