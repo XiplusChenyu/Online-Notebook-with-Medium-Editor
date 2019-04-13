@@ -57,8 +57,8 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
     let $music_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"create table\" " +
-        "aria-label=\"create table\">" +
+        " title=\"create music\" " +
+        "aria-label=\"create music\">" +
         "<i class=\"fa fa-music\" style='color: black'></i></button></li>");
 
 
@@ -78,8 +78,8 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
     let $question_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"create table\" " +
-        "aria-label=\"create table\">" +
+        " title=\"create question\" " +
+        "aria-label=\"create question\">" +
         "<i class=\"fa fa-question\" style='color: black'></i></button></li>");
 
      $question_button.click(
@@ -94,8 +94,8 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
      let $map_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"create table\" " +
-        "aria-label=\"create table\">" +
+        " title=\"create map\" " +
+        "aria-label=\"create map\">" +
         "<i class=\"fa fa-map-marker\" style='color: black'></i></button></li>");
 
      $map_button.click(
@@ -110,7 +110,7 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
                 "        backgroundColor:'grey',\n" +
                 "        regionStyle: {\n" +
                 "          initial: {\n" +
-                "            fill: 'yellow'\n" +
+                "            fill: 'blue'\n" +
                 "          }\n" +
                 "        },\n" +
                 "        zoomOnScroll: false,\n" +
@@ -127,10 +127,26 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
         }
     );
 
+     let $up_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
+        "medium-editor-button-last medium-editor-button-active\"" +
+        " title=\"upload\" " +
+        "aria-label=\"upload\">" +
+        "<i class=\"fa fa-angle-up\" style='color: black'></i></button></li>");
+
+     $up_button.click(
+        function () {
+            alert("Haha. it's fake!");
+            editor.removeElements('.medium-insert-buttons');
+             $(".medium-insert-buttons-addons").attr('style', 'display: none');
+        }
+    );
+
+
     father_elements.addClass('Iamgoodnow');
     father_elements.append($discussion_button);
     father_elements.append($table_button);
     father_elements.append($question_button);
     father_elements.append($music_button);
     father_elements.append($map_button);
+    father_elements.append($up_button);
 });
