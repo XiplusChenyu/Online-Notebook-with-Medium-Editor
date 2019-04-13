@@ -19,4 +19,4 @@ i.e. create href for music
 ### Sample Editor
 I implement the requirements here
 
-<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/PadPage.png" height=300>
+<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/PadPage.png">
