@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-810">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state relative-caret-position="203">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/static/web_app/myplugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+            <state relative-caret-position="-132">
+              <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/web_app/templates/web_app/edit_entry.html" />
         <option value="$PROJECT_DIR$/web_app/templates/web_app/base.html" />
         <option value="$PROJECT_DIR$/web_app/static/web_app/main.css" />
-        <option value="$PROJECT_DIR$/web_pj/settings.py" />
         <option value="$PROJECT_DIR$/web_app/static/web_app/main.js" />
         <option value="$PROJECT_DIR$/web_app/static/web_app/myplugin.js" />
+        <option value="$PROJECT_DIR$/web_pj/settings.py" />
       </list>
     </option>
   </component>
@@ -280,18 +280,17 @@
       <workItem from="1555118462335" duration="15658000" />
       <workItem from="1555136346768" duration="43000" />
       <workItem from="1555153139602" duration="1037000" />
-      <workItem from="1555170676813" duration="3194000" />
+      <workItem from="1555170676813" duration="3540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98592000" />
+    <option name="totallyTimeSpent" value="98938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1052" y="0" width="628" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33394384" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3327645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,7 +304,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -626,30 +625,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
+    <entry file="file://$PROJECT_DIR$/web_app/static/web_app/myplugin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="-132">
+          <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
           <folding>
-            <element signature="e#305#314#0" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/static/web_app/myplugin.js">
+    <entry file="file://$PROJECT_DIR$/web_pj/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        <state relative-caret-position="203">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="e#305#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
