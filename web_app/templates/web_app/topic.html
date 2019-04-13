@@ -1,22 +1,32 @@
 {% extends "web_app/base.html"%}
 {%block content%}
 
-<h1>Topics: {{topic}}</h1>
-<ul>
-    {% for item in entries %}
-    <li>
-        <p>{{ item.date_added|date:'M d, Y H:i' }}</p>
-        <div class="textfield">{{item.text}}</div>
 
-        <a href="{% url 'web_app:edit_entry' item.id %}">edit entry</a>
-        <a href="{% url 'web_app:del_entry' item.id %}">delete entry</a>
-    </li>
+<h1 style="margin: 5px">Topics: {{topic}}
+    <a href="{% url 'web_app:new_entry' topic.id %}" class="btn btn-primary">new</a>
+</h1>
+
+<div>
+    {% for item in entries %}
+  <div class="card" style="width: fit-content">
+      <div class="card-footer">
+      <a href="{% url 'web_app:edit_entry' item.id %}" class="btn btn-success">edit</a>
+        <a href="{% url 'web_app:del_entry' item.id %}" class="btn btn-danger">delete</a>
+    </div>
+    <div class="card-body">
+      <div class="card-text textfield">{{item.text}}</div>
+    </div>
+       <div class="card-footer">
+         <h6 class="card-title">Add time: {{ item.date_added|date:'M d, Y H:i' }}</h6>
+    </div>
+
+  </div>
+</div>
 
     {% empty %}
-    <li>There are no entries for this topic yet.</li>
+    <h3 class="flash">There are no entries for this topic yet.</h3>
     {% endfor %}
-    <a href="{% url 'web_app:new_entry' topic.id %}">add new entry</a>
-</ul>
+
 
 <script>
 

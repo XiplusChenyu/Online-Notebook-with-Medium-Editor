@@ -1,15 +1,24 @@
 {% extends "web_app/base.html"%}
 {%block content%}
 
-<p><a href="{% url 'web_app:topic' topic.id %}">{{ topic }}</a></p>
-<h1>Edit Entry</h1>
-
-<form id="entry_form"  action="{% url 'web_app:edit_entry' entry.id %}" method=POST>
+<div class="card border-dark mb-3" style="width: fit-content;">
+  <div class="card-header"><a href="{% url 'web_app:topic' topic.id %}" class="btn btn-info">Back to {{ topic }}</a></div>
+  <div class="card-body text-dark">
+    <h6 class="card-title">Edit Entry Here</h6>
+      <br>
+    <div class="card-text">
+        <form id="entry_form"  action="{% url 'web_app:edit_entry' entry.id %}" method=POST>
     {% csrf_token %}
     <textarea name="text" class="editable">{{ entry.text }}</textarea>
             <br>
-    <button  class="entry_submit" type="button" name="btnSubmit">Save Changes</button>
+    <button  class="entry_submit btn btn-success" type="button" name="btnSubmit">Save Changes</button>
 </form>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 {% endblock content %}
