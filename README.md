@@ -6,8 +6,6 @@ This is a project
 # Demo Video Here
 https://youtu.be/VzuTe-hy41o (v-2)
 
-https://youtu.be/COoWM-TbruY (v-1 outdated)
-
 # Explanations:
 - I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future
 - I use a not smart way using jquery to create the plugin bar. 
