@@ -16,7 +16,9 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
     $table_button.click(
         function () {
-            let little_table = "<table border=\"1\">\n" +
+            let value = prompt("type in format (col, row)", "2, 2");
+            let col = 2, row = 2;
+            let little_table = "<table style='margin: auto' border=\"1\">\n" +
                 "<tr>\n" +
                 "<td>I am a cell</td>\n" +
                 "<td>I am a cell</td>\n" +
@@ -26,6 +28,25 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
                 "<td>I am a cell</td>\n" +
                 "</tr>\n" +
                 "</table>";
+
+            try{
+                let array = value.split(',');
+                col = parseInt(array[0]);
+                row = parseInt(array[1]);
+                let each_col = "<td>I am a cell</td>\n";
+                little_table = "<table style='margin: auto' border=\"1\">\n";
+                for (let i=0; i<row; i++){
+                    little_table += "<tr>\n";
+                    for (let j=0; j<col; j++){
+                        little_table += each_col;
+                    }
+                    little_table += "<tr>\n";
+                }
+                little_table += "</table>";
+            }catch (e) {
+
+            }
+
             editor.pasteHTML(little_table);
             editor.removeElements('.medium-insert-buttons', 'ul.medium-insert-buttons-addons');
             $(".medium-insert-buttons-addons").attr('style', 'display: none');
@@ -66,8 +87,9 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
     $music_button.click(
         function () {
             let file_path = prompt("please type in a online audio path", "https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/blob/master/music/example.mp3");
-            let music_block = `<a href="${file_path}">Listen Music<a/>`;
+            let music_block = `<a href="${file_path}"><i id="music_icon" style='color:black'>&nbsp;Music Link</i><a/>`;
             editor.pasteHTML(music_block);
+            $('#music_icon').addClass("fa fa-music");
             editor.removeElements('.medium-insert-buttons');
 
              $(".medium-insert-buttons-addons").attr('style', 'display: none');
@@ -100,9 +122,19 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
      $map_button.click(
         function () {
+            $('#del').removeClass('notshow');
             $('#mapdiv').remove();
+            $('#del').click(function del_map() {
+                        if(!$("#del").hasClass("notshow")){
+                            $("#del").addClass("notshow");
+                            $("#container").empty();
+                        }
+                        }
+                        );
+
             let holder = "<div id=\"mapdiv\"></div>";
-            let $el =$(" <div id=\"container\" style=\"width: 500px; contenteditable=false; height:300px\"></div>" +
+            let $el =$(" <div id=\"container\" style=\"width: 500px; contenteditable=false; " +
+                "margin: auto; height:300px\"></div>" +
                 "<br>" +
                 "" +
                 "  <script>\n" +
@@ -141,13 +173,21 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
      let $up_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"upload\" " +
-        "aria-label=\"upload\">" +
-        "<i class=\"fa fa-angle-up\" style='color: black'></i></button></li>");
+        " title=\"upload file\" " +
+        "aria-label=\"upload file\">" +
+        "<i class=\"fa fa fa-arrow-up\" style='color: black'></i></button></li>");
 
      $up_button.click(
         function () {
-            alert("Haha. it's fake!");
+            let file_path = prompt("Please type in a online file path:", "https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/blob/master/music/example.mp3");
+            let file_block = `<a type="button" id="file_input" href="${file_path}"><i id="file_icon" style='color:black'></i><a/>`;
+            editor.pasteHTML(file_block);
+            $('#file_icon').addClass("fa fa-file");
+            $('#file_icon').addClass("btn btn_info");
+
+            editor.removeElements('.medium-insert-buttons');
+
+             $(".medium-insert-buttons-addons").attr('style', 'display: none');
             editor.removeElements('.medium-insert-buttons');
              $(".medium-insert-buttons-addons").attr('style', 'display: none');
         }
@@ -155,13 +195,13 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
       let $math_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"add_math\" " +
-        "aria-label=\"add_math\">" +
+        " title=\"add math\" " +
+        "aria-label=\"add math\">" +
         "<i class=\"fa fa-calculator\" style='color: black'></i></button></li>");
 
      $math_button.click(
         function () {
-            let math_text = prompt("please type in a math in Letax",
+            let math_text = prompt("Please type in a Latex math equation here:",
                 "Here is math: \\(x+1\\) and a display $$x+1\\over x-1$$");
 
             let holder = "<div id=\"mathdiv\"></div>";
@@ -182,6 +222,22 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
     );
 
 
+      let $more_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
+        "medium-editor-button-last medium-editor-button-active\"" +
+        " title=\"more\" " +
+        "aria-label=\"more\">" +
+        "<i class=\"fa fa-spinner\" style='color: black'></i></button></li>");
+
+     $more_button.click(
+        function () {
+            alert("For more information, please check my GitHub page!");
+            editor.removeElements('.medium-insert-buttons');
+             $(".medium-insert-buttons-addons").attr('style', 'display: none');
+        }
+    );
+
+
+
     father_elements.addClass('Iamgoodnow'); // prevent re-add
     father_elements.append($discussion_button);
     father_elements.append($table_button);
@@ -189,10 +245,12 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
     father_elements.append($question_button);
     father_elements.append($music_button);
     father_elements.append($map_button);
-
     father_elements.append($up_button);
+    father_elements.append($more_button);
 });
 
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
+
+// use this function to del map

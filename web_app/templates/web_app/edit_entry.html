@@ -2,7 +2,9 @@
 {%block content%}
 
 <div class="card border-dark mb-3" style="width: 100%; margin: auto">
-  <div class="card-header"><a href="{% url 'web_app:topic' topic.id %}" class="btn btn-info">Back to {{ topic }}</a></div>
+  <div class="card-header"><a href="{% url 'web_app:topic' topic.id %}" class="btn btn-info">Back to {{ topic }}</a>
+  <button type="button" id="del" class="btn btn-danger notshow">delete map</button>
+  </div>
   <div class="card-body text-dark">
     <h6 class="card-title">Edit Entry Here</h6>
       <br>

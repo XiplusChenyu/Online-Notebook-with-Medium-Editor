@@ -121,3 +121,7 @@ hr {border:2px #cccccc solid;}
 .card{
     box-shadow: 0 1.5px 3px black;
 }
+
+.notshow {
+    display: none;
+}

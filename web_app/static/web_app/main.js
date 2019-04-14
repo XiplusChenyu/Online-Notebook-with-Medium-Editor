@@ -2,6 +2,11 @@ editor = new MediumEditor('.editable',{
     extensions: {
       table: new MediumEditorTable()
     },
+    paste: {
+                cleanPastedHTML: false,
+                forcePlainText: false
+            },
+
     toolbar: {
     buttons: [
         'bold',
@@ -59,8 +64,7 @@ $(function () {
 $('.entry_submit').click(function(event) {
   $('#entry_form .medium-insert-buttons').remove();
   let form = document.getElementById('entry_form');
-  console.log(form);
+  console.log(form.innerHTML);
   form.submit();
+
 });
-
-
