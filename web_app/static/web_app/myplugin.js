@@ -56,8 +56,8 @@ $(document).on('click', '.medium-editor-insert-plugin .medium-insert-buttons', f
 
     let $discussion_button = $("<li><button type='button' class=\"medium-editor-action medium-editor-action-table " +
         "medium-editor-button-last medium-editor-button-active\"" +
-        " title=\"create table\" " +
-        "aria-label=\"create table\">" +
+        " title=\"create discussion area\" " +
+        "aria-label=\"create discussion area\">" +
         "<i class=\"fa fa-group\" style='color: black'></i></button></li>");
 
     $discussion_button.click(
