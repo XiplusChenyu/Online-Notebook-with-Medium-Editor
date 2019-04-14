@@ -5,7 +5,7 @@ This is a project
 
 # Demo Video Here
 
-https://youtu.be/COoWM-TbruY
+https://youtu.be/COoWM-TbruY (v-1 outdated)
 
 # Explanations:
 - I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future
