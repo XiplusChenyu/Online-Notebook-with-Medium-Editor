@@ -4,6 +4,7 @@ This is a project
 - Check <a href="https://dry-mountain-33107.herokuapp.com/">my heroku website</a>
 
 # Demo Video Here
+https://youtu.be/VzuTe-hy41o (v-2)
 
 https://youtu.be/COoWM-TbruY (v-1 outdated)
 
@@ -19,4 +20,4 @@ i.e. create href for music
 ### Sample Editor
 I implement the requirements here
 
-<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/PadPage.png">
+<img src="https://github.com/XiplusChenyu/online-pad/blob/master/git-pictures/DEMO.png">
