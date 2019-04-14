@@ -2,13 +2,13 @@
 {%block content%}
 
 
-<h1 style="margin: 5px">Topics: {{topic}}
-    <a href="{% url 'web_app:new_entry' topic.id %}" class="btn btn-primary">new</a>
+<h1 style="margin: 5px">
+    Topic: {{topic}} &nbsp; &nbsp;<a href="{% url 'web_app:new_entry' topic.id %}" class="btn btn-primary">add new</a>
 </h1>
-
+<hr size="1" noshade="noshade" />
 <div>
     {% for item in entries %}
-  <div class="card" style="width: fit-content">
+  <div class="card" style="width: 100%; margin: auto">
       <div class="card-footer">
       <a href="{% url 'web_app:edit_entry' item.id %}" class="btn btn-success">edit</a>
         <a href="{% url 'web_app:del_entry' item.id %}" class="btn btn-danger">delete</a>

@@ -111,3 +111,13 @@ blockquote{
 h4, h5          { font-family: 'Georgia', serif; margin: 0;}
 h4              { border-bottom: 2px solid #eee; }
 h5              { font-size: 2em; }
+
+.btn{
+    box-shadow: 0 3px 6px black;
+}
+
+hr {border:2px #cccccc solid;}
+
+.card{
+    box-shadow: 0 1.5px 3px black;
+}
