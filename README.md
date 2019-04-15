@@ -1,7 +1,7 @@
 # online-pad
 This is a project
 - Author: Chenyu Xi
-- Check the <a href="https://dry-mountain-33107.herokuapp.com/"> demo website</a> and have fun with it
+- Check the <a href="https://dry-mountain-33107.herokuapp.com/"> demo website</a> and have fun with it (the loading might be slow when you first hit it)
 
 # Demo Video Here
 https://youtu.be/VzuTe-hy41o (v-2)
