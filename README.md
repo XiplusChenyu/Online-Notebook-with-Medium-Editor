@@ -6,12 +6,8 @@ This is a project
 # Demo Video Here
 https://youtu.be/VzuTe-hy41o (v-2)
 
-# Explanations:
-- I did this project as a notebook website, however I didn't implement a user system currently, I might do it in the future
-- I use a not smart way using jquery to create the plugin bar. 
-The extension already offers two great functions. I wrote the rest buttons.
-- Meanwhile, the MathJax sdk is not compatible well with the plugin, in some rare case the math equation will disappear
-- I implement add table button in two place, one is in plugin tool bar by myself and one is better using some third party package
+# Note:
+- This is a django web application
 - If you want to run server locally, change the LOCAL_TEST to true in setting.py
 
 # Demo
