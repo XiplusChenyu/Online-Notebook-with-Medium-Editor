@@ -1,4 +1,4 @@
-# online-pad
+# Online Notebook with Medium Editor
 This is a project
 - Author: Chenyu Xi
 - Check the <a href="https://dry-mountain-33107.herokuapp.com/"> demo website</a> and have fun with it (the loading might be slow when you first hit it)
